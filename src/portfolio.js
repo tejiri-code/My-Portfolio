@@ -18,7 +18,7 @@ const Portfolio = () => {
   return (
     <animated.div className="portfolio" style={fadeIn}>
       <div className="intro">
-        <img src="your-picture.jpg" alt="Your Picture" />
+      <img src="images/tej30.jpg" alt="pic of tej" width="250" height="300" class="profile-pic"/>
         <h1 style={{ color: '#ff6f00' }}>Welcome to My Portfolio</h1>
         <p>
           Hello! I'm a creative developer passionate about building awesome web experiences.
@@ -28,19 +28,13 @@ const Portfolio = () => {
         <h2>Connect with Me</h2>
         <ul>
           <li>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
+          <a href="https://github.com/tejiri-code" class="btn">Github</a>
           </li>
           <li>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              Twitter
-            </a>
+          <a href="https://www.linkedin.com/in/edjere-evelyn-oghenetejiri-5267a9250" class="btn">Linkedin</a>
           </li>
           <li>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
+          <a href="https://twitter.com/oghenetejiirii?s=11&t=iqkQNAbtjjHj9gPd2kh0yg" class="btn">Twitter</a>
           </li>
         </ul>
       </div>
