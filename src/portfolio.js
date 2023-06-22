@@ -15,11 +15,7 @@ const Portfolio = () => {
     config: { duration: 1000 },
   });
 
-  const rotate = useSpring({
-    transform: 'rotate(0deg)',
-    from: { transform: 'rotate(-360deg)' },
-    config: { duration: 2000 },
-  });
+  
 
   return (
     <animated.div className="portfolio" style={fadeIn}>
@@ -37,7 +33,7 @@ const Portfolio = () => {
           <li>Animation</li>
         </ul>
       </animated.div>
-      <animated.div className="projects" style={rotate}>
+      <animated.div className="projects" >
         <h2>Projects</h2>
         <div className="project">
           <h3>Project 1</h3>
