@@ -23,7 +23,7 @@ const Portfolio = () => {
     const toggleColorTheme = () => {
       setIsDarkMode(!isDarkMode);
     };
-  
+  }
   return (
     
     <animated.div className="portfolio" style={fadeIn}>
