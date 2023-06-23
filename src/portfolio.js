@@ -36,7 +36,7 @@ const Portfolio = () => {
                 <a className=' bg-blue-600 text-white px-4 py-2 rounded-md ml-8' href="/westliam resume.png" download> 
                     Resume
                     </a>   
-         </ul>
+        
        </div>
       <h1 >Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
