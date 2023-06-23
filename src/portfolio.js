@@ -9,27 +9,6 @@ import linktree from './linktree.png';
 import agt from './agt.png';
 import quiz from './quiz.png';
 
-function TypingAnimation({ text }) {
-  const [displayText, setDisplayText] = useState('');
-
-  useEffect(() => {
-    let currentText = '';
-    let currentIndex = 0;
-
-    const typingInterval = setInterval(() => {
-      currentText += text[currentIndex];
-      setDisplayText(currentText);
-      currentIndex++;
-
-      if (currentIndex === text.length) {
-        clearInterval(typingInterval);
-      }
-    }, 100); // Adjust the typing speed here (in milliseconds)
-  }, [text]);
-
-  return <span>{displayText}</span>;
-}
-
 function Portfolio() {
   const fadeIn = useSpring({
     opacity: 1,
@@ -46,7 +25,15 @@ function Portfolio() {
     <animated.div className="portfolio" style={fadeIn}>
       <div className="py-10 mb-6 flex justify-between">
         <h1 className="text-xl font-burtons">
-          <TypingAnimation text="Hi! It's Tejiri" />
+          {Array.from("Hi! It's Tejiri").map((letter, index) => (
+            <span
+              key={index}
+              className="animated-text"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              {letter}
+            </span>
+          ))}
         </h1>
       </div>
       <h1>Welcome to My Portfolio</h1>
