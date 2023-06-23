@@ -4,9 +4,9 @@ import './styles.css';
 import { AiFillLinkedin, AiFillGithub, AiFillMail, AiFillTwitterCircle } from 'react-icons/ai';
 import image from './image.png';
 import connected from './connected.png';
-import agt from './agt.png';
-import linktree from './linktree.png';
 import navigate from './navigate.png';
+import linktree from './linktree.png';
+import agt from './agt.png';
 import quiz from './quiz.png';
 
 function Portfolio() {
