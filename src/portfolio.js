@@ -24,17 +24,12 @@ function Portfolio() {
   return (
     <animated.div className="portfolio" style={fadeIn}>
       <div className="py-10 mb-6 flex justify-between">
-        <h1 className="text-xl font-burtons">
-          {Array.from("Hi! It's Tejiri").map((letter, index) => (
-            <span
-              key={index}
-              className="animated-text"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {letter}
-            </span>
-          ))}
-        </h1>
+      <h1 className="text-xl font-burtons">
+  <span className="animated-text">
+    Hi! It's Tejiri
+  </span>
+</h1>
+
       </div>
       <h1>Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
