@@ -76,7 +76,7 @@ const Portfolio = () => {
         <div className="project">  
         <a href = "http://www.connected.net.ng/">
             <div className=" basis-1/3 flex-1">
-                <Image src={connected} 
+                <img src={connected} 
                     className="rounded-lg object-cover" 
                     width={"100%"} 
                     height={"100%"} 
