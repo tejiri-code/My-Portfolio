@@ -18,7 +18,7 @@ const Portfolio = () => {
 
   return (
     <animated.div className="portfolio" style={fadeIn}>
-      <h1 style={{ color: '#ff6f00' }}>Welcome to My Portfolio</h1>
+      <h1 >Welcome to My Portfolio</h1>
       <img src={tej30} alt="Your Picture" className="profile-image" />
       <p>
         Hello! I'm a creative developer passionate about building awesome web experiences.
