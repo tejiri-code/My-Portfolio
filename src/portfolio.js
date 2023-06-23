@@ -29,19 +29,19 @@ const Portfolio = () => {
           <li>
             <a href="https://www.linkedin.com/in/edjere-evelyn-oghenetejiri-5267a9250" target="_blank" rel="noopener noreferrer">
             <AiFillLinkedin size={30}/>
-              LinkedIn
+            
             </a>
           </li>
           <li>
             <a href="https://twitter.com/oghenetejiirii?s=11&t=iqkQNAbtjjHj9gPd2kh0yg" target="_blank" rel="noopener noreferrer" >
-            <AiFillTwitterCircle/>
-              Twitter
+            <AiFillTwitterCircle size={30}/>
+              
             </a>
           </li>
           <li>
             <a href="https://github.com/tejiri-code" target="_blank" rel="noopener noreferrer">
             <AiFillGithub size={30}/>
-              GitHub
+              
             </a>
           </li>
           <li>
