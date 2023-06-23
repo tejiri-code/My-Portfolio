@@ -2,7 +2,8 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles.css';
 import image from './image.png';
-import {AiFillLinkedin,AiFillGithub, AiFillMail,AiFillTwitterCircle} from 'react-icons/ai';
+import {AiFillLinkedin,AiFillGithub, AiFillMail,AiFillTwitterCircle,} from 'react-icons/ai';
+import {BsFillMoonStarsFill} from 'react-icons/bs';
 const Portfolio = () => {
   const fadeIn = useSpring({
     opacity: 1,
@@ -17,6 +18,12 @@ const Portfolio = () => {
   });
 
   return (
+    <div className=' py-10 mb-6 flex justify-between'>
+    <h1 className=' text-xl font-burtons'>Westliam</h1>
+    <ul className=' flex items-center'>
+       <li>
+           <BsFillMoonStarsFill className=' cursor-pointer text-xl'/>
+           </li>
     <animated.div className="portfolio" style={fadeIn}>
       <h1 >Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
