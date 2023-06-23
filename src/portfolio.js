@@ -21,10 +21,17 @@ const Portfolio = () => {
     
     <animated.div className="portfolio" style={fadeIn}>
        <div className=' py-10 mb-6 flex justify-between'>
-         <h1 className=' text-xl font-burtons'>Tejiri</h1>
-         <ul className=' flex items-center'>
-                <BsFillMoonStarsFill className=' cursor-pointer text-xl'/>  
-         </ul>
+       <h1 className="text-xl font-burtons">
+  {Array.from("Hi! It's Tejiri").map((letter, index) => (
+    <span
+      key={index}
+      className="animated-text"
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      {letter}
+    </span>
+  ))}
+</h1>
        </div>
       <h1 >Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
