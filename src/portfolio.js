@@ -33,10 +33,7 @@ const Portfolio = () => {
       <button className="color-toggle-button" onClick={toggleColorTheme}>
         <BsFillMoonStarsFill className="cursor-pointer text-xl" />
       </button>
-                <a className=' bg-blue-600 text-white px-4 py-2 rounded-md ml-8' href="/westliam resume.png" download> 
-                    Resume
-                    </a>   
-        
+      </div>   
        </div>
       <h1 >Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
