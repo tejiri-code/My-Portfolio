@@ -46,7 +46,8 @@ function Portfolio() {
           <h3 className="text-2xl py-2 md:text-3xl">Frontend Developer</h3>
           <p className="text-base py-5 leading-8 text-gray-800 max-w-1xl mx-auto dark:text-white">
             Hello! I'm a creative developer passionate about building awesome web experiences.
-            Currently a freelancer, learning how to improve my skills anyway possible
+           I enjoy collaborating with talented individuals and teams to bring ideas to life and deliver
+    exceptional digital solutions. I'm currently open to opportunities.
           </p>
         </div>
       </div>
@@ -83,41 +84,44 @@ function Portfolio() {
           </li>
         </ul>
       </div>
+     
       <div className="projects">
-        <h2 className="section-title">Projects</h2>
+      <hr></hr>
+        <h2 className="section-title"><u>Projects</u></h2>
+       
 
         <div className="project">
           <h3 className="project-title">Project 1</h3>
           <p className="project-description">ConnectED</p>
-          <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
+          <a className="project-link" href="http://www.connected.net.ng/" target="_blank" rel="noopener noreferrer">
             <img src={connected} alt="ConnectED" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 2</h3>
           <p className="project-description">Navigate</p>
-          <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
+          <a className="project-link" href="https://tejiri-code.github.io/University-Navigation-Map/" target="_blank" rel="noopener noreferrer">
             <img src={navigate} alt="Navigate" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 3</h3>
           <p className="project-description">Linktree Clone.</p>
-          <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
+          <a className="project-link" href="https://tejiri-code.github.io/LinkTree-Clone/" target="_blank" rel="noopener noreferrer">
             <img src={linktree} alt="Linktree" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 4</h3>
           <p className="project-description">Automated Timetable Generator</p>
-          <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
+          <a className="project-link" href="https://tejiri-code.github.io/Automated-Timetable-Generator/" target="_blank" rel="noopener noreferrer">
             <img src={agt} alt="AGT" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 5</h3>
           <p className="project-description">Quiz Me</p>
-          <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
+          <a className="project-link" href="https://tejiri-code.github.io/Quiz-App/" target="_blank" rel="noopener noreferrer">
             <img src={quiz} alt="Quiz" className="connect" />
           </a>
         </div>
