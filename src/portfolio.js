@@ -4,7 +4,10 @@ import './styles.css';
 import image from './image.png';
 import {AiFillLinkedin,AiFillGithub, AiFillMail,AiFillTwitterCircle,} from 'react-icons/ai';
 import connected from './connected.png';
-
+import navigate from './navigate.png';
+import linktree from './linktree.png';
+import agt from './agt.png';
+import quiz from './quiz.png';
 const Portfolio = () => {
   const fadeIn = useSpring({
     opacity: 1,
@@ -86,21 +89,28 @@ const Portfolio = () => {
           <h3 className="project-title">Project 2</h3>
           <p className="project-description">This is the second project I worked on.</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
-            View Project
+          <img src={navigate} alt="Your Picture" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 2</h3>
           <p className="project-description">This is the second project I worked on.</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
-            View Project
+          <img src={linktree} alt="Your Picture" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 2</h3>
           <p className="project-description">This is the second project I worked on.</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
-            View Project
+          <img src={agt} alt="Your Picture" className="connect" />
+          </a>
+        </div>
+        <div className="project">
+          <h3 className="project-title">Project 2</h3>
+          <p className="project-description">This is the second project I worked on.</p>
+          <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
+          <img src={quiz} alt="Your Picture" className="connect" />
           </a>
         </div>
       </div>
