@@ -3,6 +3,8 @@ import { useSpring, animated } from 'react-spring';
 import './styles.css';
 import tej30 from './images/tej30.jpg';
 
+
+
 function Portfolio() {
   const fadeIn = useSpring({
     opacity: 1,
@@ -27,13 +29,17 @@ function Portfolio() {
       </div>
       <div className="socials">
         <h2>Connect with Me</h2>
-       
+        <ul className="social-links">
+          <li>
             <a href="https://github.com/tejiri-code" class="btn">Github</a>
-         
+          </li>
+          <li>
             <a href="https://www.linkedin.com/in/edjere-evelyn-oghenetejiri-5267a9250" class="btn">Linkedin</a>
-         
+          </li>
+          <li>
             <a href="https://twitter.com/oghenetejiirii?s=11&t=iqkQNAbtjjHj9gPd2kh0yg" class="btn">Twitter</a>
-         
+          </li>
+        </ul>
       </div>
       <div className="projects">
         <h2>Projects</h2>
