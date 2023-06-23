@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import './styles.css';
 import image from './image.png';
 import {AiFillLinkedin,AiFillGithub, AiFillMail,AiFillTwitterCircle,} from 'react-icons/ai';
-import connected from './connected.png';
+import connected from '../images/connected.png';
 
 const Portfolio = () => {
   const fadeIn = useSpring({
