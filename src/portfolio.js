@@ -74,16 +74,10 @@ const Portfolio = () => {
       </div>
       <div className="projects">
         <h2 className="section-title">Projects</h2>
+       
         <div className="project">
           <h3 className="project-title">Project 1</h3>
-          <p className="project-description">This is the first project I worked on.</p>
-          <a className="project-link" href="project-1-url" target="_blank" rel="noopener noreferrer">
-            View Project
-          </a>
-        </div>
-        <div className="project">
-          <h3 className="project-title">Project 2</h3>
-          <p className="project-description">This is the second project I worked on.</p>
+          <p className="project-description">ConnectED</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
           <img src={connected} alt="Your Picture" className="connect" />
           </a>

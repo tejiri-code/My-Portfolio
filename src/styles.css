@@ -124,4 +124,5 @@ color: #000;}
   }
   .connect{width:100%;
   height:100%; 
-  layout:responsive;}
+  layout:responsive;
+border: #000 solid 2px;}
