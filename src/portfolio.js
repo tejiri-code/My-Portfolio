@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles.css';
-import tej30 from './images/tej30.jpg';
+import tej30 from './tej30.jpg';
 
 
 
@@ -21,8 +21,8 @@ function Portfolio() {
   return (
     <animated.div className="portfolio" style={fadeIn}>
       <div className="intro">
-      <img src="/images/tej30.jpg" alt="Your Picture" className="profile-image" />
-        <h1 style={{ color: '#ff6f00' }}>Welcome to My Portfolio</h1>
+      <img src="/tej30.jpg" alt="Your Picture" className="profile-image" />
+        <h1>Welcome to My Portfolio</h1>
         <p>
           Hello! I'm a creative developer passionate about building awesome web experiences.
         </p>
