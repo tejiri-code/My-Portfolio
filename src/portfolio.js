@@ -20,14 +20,15 @@ const Portfolio = () => {
     <animated.div className="portfolio" style={fadeIn}>
       <h1 >Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
-      < <div className=' py-6 mb-12 '>
+       <div className=' py-6 mb-12 '>
         <div className=' text-center px-2 py-10'>
         <h2 className=' text-2xl py-2 text-teal-500 font-medium md:text-6xl'>Evelyn Edjere</h2>
          <h3 className=' text-2xl py-2 md:text-3xl'>Frontend Developer</h3> 
          <p className=' text-base py-5 leading-8 text-gray-800  max-w-1xl mx-auto dark:text-white'>
-         Hello! I'm a creative developer passionate about building web experiences.
+         Hello! I'm a creative developer passionate about building awesome web experiences.
          Currently a freelancer, learning how to improve my skills anyway possible
          </p>
+        </div>
         </div>
       <div className="socials">
         <h2 className="section-title">Connect with Me</h2>
