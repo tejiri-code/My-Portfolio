@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles.css';
-import image from './image.png';
 import { AiFillLinkedin, AiFillGithub, AiFillMail, AiFillTwitterCircle } from 'react-icons/ai';
+import image from './image.png';
 import connected from './connected.png';
 import navigate from './navigate.png';
 import linktree from './linktree.png';
@@ -96,28 +96,28 @@ const Portfolio = () => {
         </div>
         <div className="project">
           <h3 className="project-title">Project 2</h3>
-          <p className="project-description">This is the second project I worked on.</p>
+          <p className="project-description">Navigate</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
             <img src={navigate} alt="Navigate" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 3</h3>
-          <p className="project-description">This is the third project I worked on.</p>
+          <p className="project-description">Linktree Clone.</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
             <img src={linktree} alt="Linktree" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 4</h3>
-          <p className="project-description">This is the fourth project I worked on.</p>
+          <p className="project-description">Automated Timetable Generator</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
             <img src={agt} alt="AGT" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 5</h3>
-          <p className="project-description">This is the fifth project I worked on.</p>
+          <p className="project-description">Quiz Me</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
             <img src={quiz} alt="Quiz" className="connect" />
           </a>
