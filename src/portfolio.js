@@ -83,8 +83,6 @@ const Portfolio = () => {
       <div className="projects">
         <h2 className="section-title">Projects</h2>
         <div className=" flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-        
-        
         <a href = "http://www.connected.net.ng/">
             <div className=" basis-1/3 flex-1">
                 <Image src={connected} 
@@ -95,88 +93,7 @@ const Portfolio = () => {
                 />
             </div>
         </a>
-        
-        
-        
-        <a href = "https://pet-westliam-x.vercel.app/">
-            <div className=" basis-1/3 flex-1">
-                <Image src={adoption} 
-                    className="rounded-lg object-cover" 
-                    width={"100%"} 
-                    height={"100%"} 
-                    layout="responsive"
-                />
-            </div>
-        </a>
-       
       
-       
-         <a href = "http://westliam-projects.buzz/southernview/">
-            <div className=" basis-1/3 flex-1">
-                <Image src={codeGenerator} 
-                    className="rounded-lg object-cover" 
-                    width={"100%"} 
-                    height={"100%"} 
-                    layout="responsive"
-                />
-            </div>
-         </a>
-
-  <a href = "https://westliam-x.github.io/Aquine/">
-            <div className=" basis-1/3 flex-1">
-                <Image src={housing} 
-                    className="rounded-lg object-cover" 
-                    width={"100%"} 
-                    height={"100%"} 
-                    layout="responsive"
-                />
-            </div>
-        </a>
-
-<a href = "https://westliam-x.github.io/maykolly-african-cusine/">
-            <div className=" basis-1/3 flex-1">
-                <Image src={maykolly} 
-                    className="rounded-lg object-cover" 
-                    width={"100%"} 
-                    height={"100%"} 
-                    layout="responsive"
-                />
-            </div>
-        </a>
-        
-                        
-        <a href = "http://westliam-projects.buzz/queensplastic/">                 
-            <div className=" basis-1/3 flex-1">
-                <Image src={ecomm} 
-                    className="rounded-lg object-cover" 
-                    width={"100%"} 
-                    height={"100%"} 
-                    layout="responsive"
-                />
-            </div>
-        </a>
-
-        <a href="http://westliam-projects.buzz/crms/">
-            <div className=" basis-1/3 flex-1">
-                <Image src={crms} 
-                    className="rounded-lg object-cover" 
-                    width={"100%"} 
-                    height={"100%"} 
-                    layout="responsive"
-                />
-            </div>
-        </a>            
-        
-       <a href = "https://westliam-x.github.io/crypto-landing-page/">
-            <div className=" basis-1/3 flex-1">     
-                <Image src={crypto} 
-                    className="rounded-lg object-cover" 
-                    width={"100%"} 
-                    height={"100%"} 
-                    layout="responsive"
-                />
-            </div>
-        </a>
       </div>
       </div>
     </animated.div>
