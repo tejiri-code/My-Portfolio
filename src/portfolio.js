@@ -23,27 +23,43 @@ const Portfolio = () => {
       <p>
         Hello! I'm a creative developer passionate about building awesome web experiences.
       </p>
-      <animated.div className="skills" style={slideIn}>
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Animation</li>
+      <div className="socials">
+        <h2 className="section-title">Connect with Me</h2>
+        <ul className="social-links">
+          <li>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </li>
         </ul>
-      </animated.div>
-      <animated.div className="projects">
-        <h2>Projects</h2>
+      </div>
+      <div className="projects">
+        <h2 className="section-title">Projects</h2>
         <div className="project">
-          <h3>Project 1</h3>
-          <p>This is the first project I worked on.</p>
+          <h3 className="project-title">Project 1</h3>
+          <p className="project-description">This is the first project I worked on.</p>
+          <a className="project-link" href="project-1-url" target="_blank" rel="noopener noreferrer">
+            View Project
+          </a>
         </div>
         <div className="project">
-          <h3>Project 2</h3>
-          <p>This is the second project I worked on.</p>
+          <h3 className="project-title">Project 2</h3>
+          <p className="project-description">This is the second project I worked on.</p>
+          <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
+            View Project
+          </a>
         </div>
-      </animated.div>
+      </div>
     </animated.div>
   );
 };
