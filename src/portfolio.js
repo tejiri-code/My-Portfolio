@@ -3,7 +3,8 @@ import { useSpring, animated } from 'react-spring';
 import './styles.css';
 import image from './image.png';
 import {AiFillLinkedin,AiFillGithub, AiFillMail,AiFillTwitterCircle,} from 'react-icons/ai';
-import {BsFillMoonStarsFill} from 'react-icons/bs';
+import connected from './connected.png';
+
 const Portfolio = () => {
   const fadeIn = useSpring({
     opacity: 1,
@@ -84,7 +85,7 @@ const Portfolio = () => {
           <h3 className="project-title">Project 2</h3>
           <p className="project-description">This is the second project I worked on.</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
-            View Project
+          <img src={image} alt="Your Picture" className="profile-image" />
           </a>
         </div>
         <div className="project">
