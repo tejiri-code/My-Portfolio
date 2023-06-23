@@ -93,21 +93,21 @@ const Portfolio = () => {
           </a>
         </div>
         <div className="project">
-          <h3 className="project-title">Project 2</h3>
+          <h3 className="project-title">Project 3</h3>
           <p className="project-description">This is the second project I worked on.</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
           <img src={linktree} alt="Your Picture" className="connect" />
           </a>
         </div>
         <div className="project">
-          <h3 className="project-title">Project 2</h3>
+          <h3 className="project-title">Project 4</h3>
           <p className="project-description">This is the second project I worked on.</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
           <img src={agt} alt="Your Picture" className="connect" />
           </a>
         </div>
         <div className="project">
-          <h3 className="project-title">Project 2</h3>
+          <h3 className="project-title">Project 5</h3>
           <p className="project-description">This is the second project I worked on.</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
           <img src={quiz} alt="Your Picture" className="connect" />
