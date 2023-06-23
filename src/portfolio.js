@@ -3,8 +3,6 @@ import { useSpring, animated } from 'react-spring';
 import './styles.css';
 import tej30 from './images/tej30.jpg';
 
-
-
 function Portfolio() {
   const fadeIn = useSpring({
     opacity: 1,

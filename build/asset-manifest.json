@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.53b8e323.css",
-    "main.js": "/static/js/main.fd2baa72.js",
+    "main.css": "/static/css/main.afd99431.css",
+    "main.js": "/static/js/main.351348c4.js",
+    "static/media/tej30.jpg": "/static/media/tej30.f24b839144bb830b731a.jpg",
     "index.html": "/index.html",
-    "main.53b8e323.css.map": "/static/css/main.53b8e323.css.map",
-    "main.fd2baa72.js.map": "/static/js/main.fd2baa72.js.map"
+    "main.afd99431.css.map": "/static/css/main.afd99431.css.map",
+    "main.351348c4.js.map": "/static/js/main.351348c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.53b8e323.css",
-    "static/js/main.fd2baa72.js"
+    "static/css/main.afd99431.css",
+    "static/js/main.351348c4.js"
   ]
 }
