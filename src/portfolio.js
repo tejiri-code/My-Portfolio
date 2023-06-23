@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles.css';
-import tej30 from './tej30.jpg';
+import image from './image.png';
 import {AiFillLinkedin,AiFillGithub, AiFillMail,AiFillTwitterCircle} from 'react-icons/ai';
 const Portfolio = () => {
   const fadeIn = useSpring({
@@ -19,7 +19,7 @@ const Portfolio = () => {
   return (
     <animated.div className="portfolio" style={fadeIn}>
       <h1 >Welcome to My Portfolio</h1>
-      <img src={tej30} alt="Your Picture" className="profile-image" />
+      <img src={image} alt="Your Picture" className="profile-image" />
       <p>
         Hello! I'm a creative developer passionate about building awesome web experiences.
       </p>
