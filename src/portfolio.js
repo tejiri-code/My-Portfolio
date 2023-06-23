@@ -15,7 +15,6 @@ const Portfolio = () => {
     from: { opacity: 0 },
     config: { duration: 1000 },
   });
-
   const slideIn = useSpring({
     transform: 'translateX(0)',
     from: { transform: 'translateX(-100%)' },
