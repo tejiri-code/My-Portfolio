@@ -17,13 +17,7 @@ const Portfolio = () => {
     config: { duration: 1000 },
   });
 
-  const Portfolio = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
   
-    const toggleColorTheme = () => {
-      setIsDarkMode(!isDarkMode);
-    };
-  }
   return (
     
     <animated.div className="portfolio" style={fadeIn}>
@@ -32,8 +26,8 @@ const Portfolio = () => {
          <div className={`portfolio ${isDarkMode ? 'dark-mode' : ''}`}>
       <button className="color-toggle-button" onClick={toggleColorTheme}>
         <BsFillMoonStarsFill className="cursor-pointer text-xl" />
-      </button>
-      </div>   
+      </button> 
+        </div>
        </div>
       <h1 >Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
