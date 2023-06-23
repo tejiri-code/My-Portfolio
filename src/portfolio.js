@@ -90,7 +90,7 @@ function Portfolio() {
           <h3 className="project-title">Project 1</h3>
           <p className="project-description">ConnectED</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
-            <img src={navigate} alt="ConnectED" className="connect" />
+            <img src={connected} alt="ConnectED" className="connect" />
           </a>
         </div>
         <div className="project">
@@ -104,21 +104,21 @@ function Portfolio() {
           <h3 className="project-title">Project 3</h3>
           <p className="project-description">Linktree Clone.</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
-            <img src={navigate} alt="Linktree" className="connect" />
+            <img src={linktree} alt="Linktree" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 4</h3>
           <p className="project-description">Automated Timetable Generator</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
-            <img src={navigate} alt="AGT" className="connect" />
+            <img src={agt} alt="AGT" className="connect" />
           </a>
         </div>
         <div className="project">
           <h3 className="project-title">Project 5</h3>
           <p className="project-description">Quiz Me</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
-            <img src={navigate} alt="Quiz" className="connect" />
+            <img src={quiz} alt="Quiz" className="connect" />
           </a>
         </div>
       </div>
