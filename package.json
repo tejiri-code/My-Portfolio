@@ -5,16 +5,19 @@
     "react-icons": "^4.10.1",
     "react-spring": "^9.7.1"
   },
+  "homepage": "https://tejiri-code.github.io/My-Portfolio/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "react-scripts": "^5.0.1"
   },
-  
   "browserslist": {
     "production": [
       ">0.2%",
