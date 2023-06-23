@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import './styles.css';
 import image from './image.png';
 import {AiFillLinkedin,AiFillGithub, AiFillMail,AiFillTwitterCircle,} from 'react-icons/ai';
-import connected from './connected.PNG';
+import connected from './connected.png';
 const Portfolio = () => {
   const fadeIn = useSpring({
     opacity: 1,
@@ -73,8 +73,7 @@ const Portfolio = () => {
       </div>
       <div className="projects">
         <h2 className="section-title">Projects</h2>
-        <div className="project">
-           
+        <div className="project">  
         <a href = "http://www.connected.net.ng/">
             <div className=" basis-1/3 flex-1">
                 <Image src={connected} 
