@@ -2,7 +2,7 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles.css';
 import tej30 from './tej30.jpg';
-import {AiFillLinkedin, AiFillGithub, AiFillMail} from 'react-icons/ai';
+import {AiFillLinkedin,AiFillGithub, AiFillMail,AiFillTwitterCircle} from 'react-icons/ai';
 const Portfolio = () => {
   const fadeIn = useSpring({
     opacity: 1,
@@ -40,7 +40,7 @@ const Portfolio = () => {
           </li>
           <li>
             <a href="https://github.com/tejiri-code" target="_blank" rel="noopener noreferrer">
-            <AiFillLinkedin size={30}/>
+            <AiFillGithub size={30}/>
               GitHub
             </a>
           </li>
