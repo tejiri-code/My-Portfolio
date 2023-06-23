@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import './styles.css';
 import image from './image.png';
 import {AiFillLinkedin,AiFillGithub, AiFillMail,AiFillTwitterCircle,} from 'react-icons/ai';
-import {BsFillMoonStarsFill} from 'react-icons/bs';
+import connected from './connected.png';
 const Portfolio = () => {
   const fadeIn = useSpring({
     opacity: 1,
@@ -74,9 +74,36 @@ const Portfolio = () => {
       <div className="projects">
         <h2 className="section-title">Projects</h2>
         <div className="project">
-          <h3 className="project-title">Project 1</h3>
-          <p className="project-description">This is the first project I worked on.</p>
-          <a className="project-link" href="project-1-url" target="_blank" rel="noopener noreferrer">
+           
+        <a href = "http://www.connected.net.ng/">
+            <div className=" basis-1/3 flex-1">
+                <Image src={connected} 
+                    className="rounded-lg object-cover" 
+                    width={"100%"} 
+                    height={"100%"} 
+                    layout="responsive"
+                />
+            </div>
+        </a>
+        </div>
+        <div className="project">
+          <h3 className="project-title">Project 2</h3>
+          <p className="project-description">This is the second project I worked on.</p>
+          <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
+            View Project
+          </a>
+        </div>
+        <div className="project">
+          <h3 className="project-title">Project 2</h3>
+          <p className="project-description">This is the second project I worked on.</p>
+          <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
+            View Project
+          </a>
+        </div>
+        <div className="project">
+          <h3 className="project-title">Project 2</h3>
+          <p className="project-description">This is the second project I worked on.</p>
+          <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
             View Project
           </a>
         </div>
