@@ -27,17 +27,17 @@ const Portfolio = () => {
         <h2 className="section-title">Connect with Me</h2>
         <ul className="social-links">
           <li>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/edjere-evelyn-oghenetejiri-5267a9250" target="_blank" rel="noopener noreferrer" class="btn">
               LinkedIn
             </a>
           </li>
           <li>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/oghenetejiirii?s=11&t=iqkQNAbtjjHj9gPd2kh0yg" target="_blank" rel="noopener noreferrer" class="btn">
               Twitter
             </a>
           </li>
           <li>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/tejiri-code" target="_blank" rel="noopener noreferrer"class="btn">
               GitHub
             </a>
           </li>

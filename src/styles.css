@@ -22,7 +22,7 @@ body{font-family: sans-serif;
 .profile-image {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 80%;
   object-fit: cover;
   margin-bottom: 20px;
 }
