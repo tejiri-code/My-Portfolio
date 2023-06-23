@@ -21,7 +21,7 @@ function Portfolio() {
   return (
     <animated.div className="portfolio" style={fadeIn}>
       <div className="intro">
-      <img src="/tej30.jpg" alt="Your Picture" className="profile-image" />
+      <img src={require('./tej30.jpg').default} alt="Your Picture" className="profile-image" />
         <h1>Welcome to My Portfolio</h1>
         <p>
           Hello! I'm a creative developer passionate about building awesome web experiences.
