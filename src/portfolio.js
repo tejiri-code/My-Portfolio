@@ -85,7 +85,7 @@ const Portfolio = () => {
           <h3 className="project-title">Project 2</h3>
           <p className="project-description">This is the second project I worked on.</p>
           <a className="project-link" href="project-2-url" target="_blank" rel="noopener noreferrer">
-          <img src={connected} alt="Your Picture" className="profile-image" />
+          <img src={connected} alt="Your Picture" className="connect" />
           </a>
         </div>
         <div className="project">
