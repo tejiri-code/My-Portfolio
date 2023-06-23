@@ -18,13 +18,22 @@ const Portfolio = () => {
   });
 
   return (
-    <div className=' py-10 mb-6 flex justify-between'>
-    <h1 className=' text-xl font-burtons'>Westliam</h1>
-    <ul className=' flex items-center'>
-       <li>
-           <BsFillMoonStarsFill className=' cursor-pointer text-xl'/>
-           </li>
+    
     <animated.div className="portfolio" style={fadeIn}>
+       <div className=' py-10 mb-6 flex justify-between'>
+         <h1 className=' text-xl font-burtons'>Westliam</h1>
+         <ul className=' flex items-center'>
+            <li>
+                <BsFillMoonStarsFill className=' cursor-pointer text-xl'/>
+                </li>
+            <li>
+                <a className=' bg-blue-600 text-white px-4 py-2 rounded-md ml-8' href="/westliam resume.png" download> 
+  
+                    Resume
+                    </a>
+                    </li>
+         </ul>
+       </div>
       <h1 >Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
        <div className=' py-6 mb-12 '>
