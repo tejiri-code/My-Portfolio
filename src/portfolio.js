@@ -17,17 +17,17 @@ const Portfolio = () => {
     config: { duration: 1000 },
   });
 
-  
   return (
     
     <animated.div className="portfolio" style={fadeIn}>
        <div className=' py-10 mb-6 flex justify-between'>
          <h1 className=' text-xl font-burtons'>Tejiri</h1>
-         <div className={`portfolio ${isDarkMode ? 'dark-mode' : ''}`}>
-      <button className="color-toggle-button" onClick={toggleColorTheme}>
-        <BsFillMoonStarsFill className="cursor-pointer text-xl" />
-      </button> 
-        </div>
+         <ul className=' flex items-center'>
+                <BsFillMoonStarsFill className=' cursor-pointer text-xl'/>
+                <a className=' bg-blue-600 text-white px-4 py-2 rounded-md ml-8' href="/westliam resume.png" download> 
+                    Resume
+                    </a>   
+         </ul>
        </div>
       <h1 >Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
