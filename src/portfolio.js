@@ -29,7 +29,7 @@ function Portfolio() {
     Hi! It's Tejiri
   </span>
 </h1>
-
+ 
       </div>
       <h1>Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
