@@ -28,12 +28,11 @@ function Portfolio() {
       <h1 className="text-xl font-burtons">
   <span className="animated-text">
     Hi! It's Tejiri
-    <a className='resume' href="/Resume.png" download> 
-  Resume
-  </a>
   </span>
 </h1>
- 
+<a className='resume' href="Resume.png" download="Resume.png"> 
+  Resume
+  </a>
       </div>
       <h1>Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
