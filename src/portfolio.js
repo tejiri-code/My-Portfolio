@@ -28,6 +28,9 @@ function Portfolio() {
       <h1 className="text-xl font-burtons">
   <span className="animated-text">
     Hi! It's Tejiri
+    <a className='resume' href="/Resume.png" download> 
+  Resume
+  </a>
   </span>
 </h1>
  
@@ -39,10 +42,6 @@ function Portfolio() {
           <h2 className="text-2xl py-2 text-teal-500 font-medium md:text-6xl">
             Edjere Evelyn Oghenetejiri
           </h2>
-           <a className='resume' href="/Resume.png" download> 
-  
-                    Resume
-                    </a>
           <h3 className="text-2xl py-2 md:text-3xl">Frontend Developer</h3>
           <p className="text-base py-5 leading-8 text-gray-800 max-w-1xl mx-auto dark:text-white">
             Hello! I'm a creative developer passionate about building awesome web experiences.

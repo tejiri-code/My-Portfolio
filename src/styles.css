@@ -97,7 +97,9 @@ color: #000;}
 .project-link:hover {
   background-color: transparent;
 }
-.resume{margin-left: 200px;}
+.resume{margin-left: 200px;
+text-decoration: none;
+color: #000;}
 .btn{background-color: #fff;
   padding: 16px 20px;
   margin-bottom: 20px;
