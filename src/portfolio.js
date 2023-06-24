@@ -29,10 +29,10 @@ function Portfolio() {
   <span className="animated-text">
     Hi! It's Tejiri
   </span>
-</h1>
-<a className='resume' href="Resume.png" download="Resume.png"> 
+  <a className='resume' href="/Resume.png" download="Resume.png"> 
   Resume
   </a>
+</h1>
       </div>
       <h1>Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
