@@ -8,7 +8,7 @@ import navigate from './navigate.png';
 import linktree from './linktree.png';
 import agt from './agt.png';
 import quiz from './quiz.png';
-import Resume from './Resume.png';
+
 
 function Portfolio() {
   const fadeIn = useSpring({
@@ -16,6 +16,12 @@ function Portfolio() {
     from: { opacity: 0 },
     config: { duration: 1000 },
   });
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'https://github.com/tejiri-code/My-Portfolio/blob/main/src/Resume1.png?raw=true';
+    link.download = 'Resume.png';
+    link.click();
+  };
   const slideIn = useSpring({
     transform: 'translateX(0)',
     from: { transform: 'translateX(-100%)' },
@@ -29,10 +35,8 @@ function Portfolio() {
   <span className="animated-text">
     Hi! It's Tejiri
   </span>
-</h1>
-<a className='resume' href="/Resume.png" download="Resume.png"> 
-  Resume
-  </a>
+</h1>  
+<button onClick={handleDownload} class="btn">Resume</button>
       </div>
       <h1>Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
