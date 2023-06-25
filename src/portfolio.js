@@ -36,7 +36,7 @@ function Portfolio() {
     Hi! It's Tejiri
   </span>
 </h1>  
-<button onClick={handleDownload} class="btn">Resume </button>
+<button onClick={handleDownload} class="btn">Resume</button>
       </div>
       <h1>Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
