@@ -8,7 +8,7 @@ import navigate from './navigate.png';
 import linktree from './linktree.png';
 import agt from './agt.png';
 import quiz from './quiz.png';
-
+import investify from './investify.png'
 
 function Portfolio() {
   const fadeIn = useSpring({
@@ -92,7 +92,12 @@ function Portfolio() {
       <hr></hr>
         <h2 className="section-title"><u>Projects</u></h2>
        
-
+        <div className="project">
+          <p className="project-description">investify</p>
+          <a className="project-link" href="https://investify-me.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={investify} alt="Investify" className="connect" />
+          </a>
+        </div>
         <div className="project">
           <p className="project-description">ConnectED</p>
           <a className="project-link" href="http://www.connected.net.ng/" target="_blank" rel="noopener noreferrer">
