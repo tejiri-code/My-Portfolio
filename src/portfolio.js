@@ -18,7 +18,7 @@ function Portfolio() {
   });
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://github.com/tejiri-code/My-Portfolio/blob/main/src/Resume1.png?raw=true';
+    link.href = 'https://drive.google.com/file/d/1E7wmLC1l0D7PZIFJ53aX5nZYc8l3D6O-/view?usp=sharing';
     link.download = 'Resume.png';
     link.click();
   };
@@ -93,7 +93,7 @@ function Portfolio() {
         <h2 className="section-title"><u>Projects</u></h2>
        
         <div className="project">
-          <p className="project-description">investify</p>
+          <p className="project-description">Investify</p>
           <a className="project-link" href="https://investify-me.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img src={investify} alt="Investify" className="connect" />
           </a>
@@ -111,7 +111,7 @@ function Portfolio() {
           </a>
         </div>
         <div className="project">
-          <p className="project-description">Linktree Clone.</p>
+          <p className="project-description">Linktree Clone</p>
           <a className="project-link" href="https://tejiri-code.github.io/LinkTree-Clone/" target="_blank" rel="noopener noreferrer">
             <img src={linktree} alt="Linktree" className="connect" />
           </a>

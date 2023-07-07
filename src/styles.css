@@ -111,9 +111,12 @@ margin-top: 30px;}
   text-align: center;
   font-size: 15px;
 margin-left: 20%;}
+.btn a{text-decoration: none;
+color: black;}
   .btn:hover{background: black;
   border: 1px solid;
   color: #fff;}
+  .btn a:hover{color: #fff;}
   @keyframes appear {
     0% {
       opacity: 0;
