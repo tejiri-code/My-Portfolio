@@ -49,7 +49,7 @@ function Portfolio() {
           <p className="text-base py-5 leading-8 text-gray-800 max-w-1xl mx-auto ">
             Hello! I'm a creative developer passionate about building awesome web experiences.
            I enjoy collaborating with talented individuals and teams to bring ideas to life and deliver
-    exceptional digital solutions.
+    exceptional digital solutions. 
      I'm currently open to opportunities.
           </p>
         </div>
