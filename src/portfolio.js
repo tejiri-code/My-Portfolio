@@ -8,7 +8,8 @@ import navigate from './navigate.png';
 import linktree from './linktree.png';
 import agt from './agt.png';
 import quiz from './quiz.png';
-import investify from './investify.png'
+import investify from './investify.png';
+import spend from './spend.png'
 
 function Portfolio() {
   const fadeIn = useSpring({
@@ -50,7 +51,7 @@ function Portfolio() {
             Hello! I'm a creative developer passionate about building awesome web experiences.
            I enjoy collaborating with talented individuals and teams to bring ideas to life and deliver
     exceptional digital solutions. 
-     I'm currently open to opportunities.
+     I'm currently open to opportunities. 
           </p>
         </div>
       </div>
@@ -92,6 +93,12 @@ function Portfolio() {
       <hr></hr>
         <h2 className="section-title"><u>Projects</u></h2>
        
+        <div className="project">
+          <p className="project-description">Spend W Me</p>
+          <a className="project-link" href="https://spend-w-me.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={spend} alt="Spend W Me" className="connect" />
+          </a>
+        </div>
         <div className="project">
           <p className="project-description">Investify</p>
           <a className="project-link" href="https://investify-me.vercel.app/" target="_blank" rel="noopener noreferrer">
