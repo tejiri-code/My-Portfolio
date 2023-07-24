@@ -10,6 +10,7 @@ import agt from './agt.png';
 import quiz from './quiz.png';
 import investify from './investify.png';
 import spend from './spend.png'
+import recp from './ReCP.png'
 
 function Portfolio() {
   const fadeIn = useSpring({
@@ -94,8 +95,15 @@ function Portfolio() {
         <h2 className="section-title"><u>Projects</u></h2>
        
         <div className="project">
-          <p className="project-description">Spend W Me</p>
+          <p className="project-description">ReCP</p>
           <a className="project-link" href="https://spend-w-me.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={recp} alt="ReCP" className="connect" />
+          </a>
+        </div>
+
+        <div className="project">
+          <p className="project-description">Spend W Me</p>
+          <a className="project-link" href="https://recep-tejiri-code.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img src={spend} alt="Spend W Me" className="connect" />
           </a>
         </div>
