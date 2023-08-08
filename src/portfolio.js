@@ -92,7 +92,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#portfolio" class="nav__link">Projects</a></li>
-                        <button onClick={handleDownload} class="btn bg-white h-8 rounded-md text-black text-center text-base ml-20">Resume</button>
+                        <button onClick={handleDownload} class="btn bg-black border border-solid border-black h-8 rounded-md text-white text-center text-base ml-20">Resume</button>
                     </ul>
                 </div>
 
