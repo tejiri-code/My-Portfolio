@@ -209,7 +209,7 @@ color: black;}
   height:100%; 
 border: #000 solid 2px;}
 .navbar{display: flex;
-margin-top: 5%}
+margin-top: 10%}
 hr{
   width: 600px;
   height: 2px;
@@ -404,7 +404,8 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--first-color);
+    background-color: black;
+    color: #fff;
 }
 
 /*===== NAV =====*/

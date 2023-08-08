@@ -80,10 +80,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
   return (
     <animated.div className="portfolio" style={fadeIn}>
-      <header class="l-header">
+      <header class="l-header" >
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">TEJIRI CODES</a>
+                    <a href="#" class="nav__logo" className="text-white font-burtons">TEJIRI CODES</a>
                 </div>
 
                 <div class={isNavOpen ? 'nav__menu show' : 'nav__menu'} id="nav-menu">
@@ -92,8 +92,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#portfolio" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <button onClick={handleDownload} class="btn">Resume</button>
+                        <button onClick={handleDownload} class="btn bg-white h-8 rounded-md text-black text-center text-base ml-20">Resume</button>
                     </ul>
                 </div>
 
@@ -111,12 +110,13 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
   </span>
 </h1>  
 
+
       </div>
       <h1 id="about">Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
       <div className="py-6 mb-12">
         <div className="text-center px-2 py-10">
-          <h2 className="text-2xl py-2 text-teal-500 font-medium md:text-6xl">
+          <h2 className="text-2xl py-2 text-blue-900 font-medium md:text-6xl">
             Edjere Evelyn Oghenetejiri
           </h2>
           <h3 className="text-2xl py-2 md:text-3xl">Frontend Developer</h3>
@@ -133,7 +133,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
         <h2 className="section-title">Connect with Me</h2>
         <ul className="social-links">
           <li>
-            <a
+            <a className="hover:text-blue-900"
               href="https://www.linkedin.com/in/edjere-evelyn-oghenetejiri-5267a9250"
               target="_blank"
               rel="noopener noreferrer"
@@ -142,7 +142,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
             </a>
           </li>
           <li>
-            <a
+            <a className="hover:text-blue-900"
               href="https://twitter.com/oghenetejiirii?s=11&t=iqkQNAbtjjHj9gPd2kh0yg"
               target="_blank"
               rel="noopener noreferrer"
@@ -151,12 +151,12 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
             </a>
           </li>
           <li>
-            <a href="https://github.com/tejiri-code" target="_blank" rel="noopener noreferrer">
+            <a className="hover:text-blue-900" href="https://github.com/tejiri-code" target="_blank" rel="noopener noreferrer">
               <AiFillGithub size={30} />
             </a>
           </li>
           <li>
-            <a className="hover:text-teal-500" href="mailto:evelynedjere@gmail.com">
+            <a className="hover:text-blue-900" href="mailto:evelynedjere@gmail.com">
               <AiFillMail size={30} />
             </a>
           </li>
