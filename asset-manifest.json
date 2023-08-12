@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.f5fe26c6.css",
-    "main.js": "/My-Portfolio/static/js/main.872451f8.js",
+    "main.css": "/My-Portfolio/static/css/main.534bbe35.css",
+    "main.js": "/My-Portfolio/static/js/main.aefbc24e.js",
     "static/media/connected.png": "/My-Portfolio/static/media/connected.ebfa1d0717bd6e64be61.png",
-    "static/media/linktree.png": "/My-Portfolio/static/media/linktree.2422dd60af72e563845e.png",
     "static/media/moda.png": "/My-Portfolio/static/media/moda.63eba096b8512cdc5594.png",
     "static/media/image.png": "/My-Portfolio/static/media/image.457c94e9d669c5a1b3fa.png",
     "static/media/navigate.png": "/My-Portfolio/static/media/navigate.da6aebeab35fa983d36d.png",
+    "static/media/linktree.png": "/My-Portfolio/static/media/linktree.8e349a452a095e2c5d20.png",
     "static/media/ReCP.png": "/My-Portfolio/static/media/ReCP.137cb834a9f998ea7273.png",
     "static/media/quiz.png": "/My-Portfolio/static/media/quiz.b1affca649171171cc8c.png",
     "static/media/investify.png": "/My-Portfolio/static/media/investify.2633ac5b27d0fb79442c.png",
     "static/media/spend.png": "/My-Portfolio/static/media/spend.55b7caaa73fbe1ddb391.png",
     "static/media/agt.png": "/My-Portfolio/static/media/agt.198e9ffd8f82e1390192.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.f5fe26c6.css.map": "/My-Portfolio/static/css/main.f5fe26c6.css.map",
-    "main.872451f8.js.map": "/My-Portfolio/static/js/main.872451f8.js.map"
+    "main.534bbe35.css.map": "/My-Portfolio/static/css/main.534bbe35.css.map",
+    "main.aefbc24e.js.map": "/My-Portfolio/static/js/main.aefbc24e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5fe26c6.css",
-    "static/js/main.872451f8.js"
+    "static/css/main.534bbe35.css",
+    "static/js/main.aefbc24e.js"
   ]
 }
