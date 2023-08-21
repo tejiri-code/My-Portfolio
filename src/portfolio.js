@@ -24,7 +24,7 @@ function Portfolio() {
   });
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1E7wmLC1l0D7PZIFJ53aX5nZYc8l3D6O-/view?usp=sharing';
+    link.href = 'https://drive.google.com/file/d/1RbWxkkHtoaycTLhSYn164PmqYCsRmDH3/view?usp=sharing';
     link.download = 'Resume.png';
     link.click();
   };
@@ -33,7 +33,6 @@ function Portfolio() {
     from: { transform: 'translateX(-100%)' },
     config: { duration: 1000 },
   });
-
   const sections = document.querySelectorAll('section[id]');
   window.addEventListener('scroll', scrollActive);
 
@@ -78,9 +77,35 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselTrack = document.querySelector('.carousel-track');
+  const carouselSlides = document.querySelectorAll('.carousel-slide');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  
+  let slideIndex = 0;
+
+  function showSlide(index) {
+    carouselTrack.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    slideIndex = (slideIndex + 1) % carouselSlides.length;
+    showSlide(slideIndex);
+  }
+
+  function prevSlide() {
+    slideIndex = (slideIndex - 1 + carouselSlides.length) % carouselSlides.length;
+    showSlide(slideIndex);
+  }
+
+  nextButton.addEventListener('click', nextSlide);
+  prevButton.addEventListener('click', prevSlide);
+});
+
   return (
     <animated.div className="portfolio" style={fadeIn}>
-      <header class="l-header" >
+      <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
                     <a href="#" class="nav__logo" className="text-white font-burtons">TEJIRI CODES</a>
@@ -88,7 +113,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
                 <div class={isNavOpen ? 'nav__menu show' : 'nav__menu'} id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#portfolio" class="nav__link">Projects</a></li>
@@ -98,7 +123,6 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
                 <div class="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
                     <i class='bx bx-menu'>
-                      
                     </i>
                 </div>
             </nav>
@@ -108,9 +132,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
   <span className="animated-text">
     Hi! It's Tejiri
   </span>
-</h1>  
-
-
+</h1>
       </div>
       <h1 id="about">Welcome to My Portfolio</h1>
       <img src={image} alt="Your Picture" className="profile-image" />
@@ -121,10 +143,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
           </h2>
           <h3 className="text-2xl py-2 md:text-3xl">Frontend Developer</h3>
           <p className="text-base py-5 leading-8 text-gray-800 max-w-1xl mx-auto " >
-            Hello! I'm a creative developer passionate about building awesome web experiences.<br/>
-           I enjoy collaborating with talented individuals and teams to bring ideas to life and deliver
-    exceptional digital solutions. <br/>
-     I'm currently open to opportunities. 
+          As an aspiring web developer, I am fueled by a relentless drive to refine my skills and explore diverse programming languages and methods.<br/>
+           Possessing a meticulous attention to detail, I am motivated to transform code into dynamic creations.<br/>
+            I am committed to unceasingly elevate my abilities, consistently embracing novel approaches and extending the limits of my expertise.<br/>
+           My journey involves constant learning and advancement, aimed at achieving excellence in every facet of my development journey. <br/>
           </p>
         </div>
       </div>
@@ -162,7 +184,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
           </li>
         </ul>
       </div>
-     
+   
+
      
       <section class="skills section" id="skills">
       <hr></hr>
@@ -170,13 +193,13 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
                 <div class="skills__container bd-grid">
                     <div class="skills__box">
-                        <h3 class="skills__subtitle">Development</h3>
-                        <span class="skills__name">Html</span>
-                        <span class="skills__name">Css</span>
-                        <span class="skills__name">Javascript</span>
-                        <span class="skills__name">Tailwind CSS</span>
-                        <span class="skills__name">Java</span>
-                        <span class="skills__name">React</span>
+                        <h3 class="skills__subtitle"></h3>
+                        <span class="skills__name"><img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>HTML</span>
+                        <span class="skills__name"><img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>CSS</span>
+                        <span class="skills__name"><img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>JAVASCRIPT</span>
+                        <span class="skills__name"><img width="48" height="48" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>TAILWIND</span>
+                        <span class="skills__name"><img width="48" height="48" src="https://img.icons8.com/color/48/react-native.png" alt="react-native"/>REACT</span>
+                        <span class="skills__name"><img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="git"/>GIT</span>
                     </div>
                 </div>
             </section>
@@ -185,6 +208,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
             <h2 className="section-title" id="portfolio"><u>Projects</u></h2>
       <div className="projects">
 
+      <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-slide">
         <div className="project">
           <p className="project-description">Moda Matrix</p>
           <a className="project-link" href="https://modamatrix.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -192,9 +218,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
             <button className='button'> Open
 </button>
           </a>
-       
+        </div>
         </div>
 
+        <div class="carousel-slide">
         <div className="project">
           <p className="project-description">ReCP</p>
           <a className="project-link" href="https://recep-tejiri-code.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -203,7 +230,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 </button>
           </a>
         </div>
+        </div>
 
+<div class="carousel-slide">
         <div className="project">
           <p className="project-description">Spend W Me</p>
           <a className="project-link" href="https://spend-w-me.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -212,6 +241,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 </button>
           </a>
         </div>
+        </div>
+
+        <div class="carousel-slide">
         <div className="project">
           <p className="project-description">Investify</p>
           <a className="project-link" href="https://investify-me.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -220,6 +252,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 </button>
           </a>
         </div>
+        </div>
+
+        <div class="carousel-slide">
         <div className="project">
           <p className="project-description">ConnectED</p>
           <a className="project-link" href="http://www.connected.net.ng/" target="_blank" rel="noopener noreferrer">
@@ -228,6 +263,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 </button>
           </a>
         </div>
+        </div>
+
+        <div class="carousel-slide">
         <div className="project">
           <p className="project-description">Navigate</p>
           <a className="project-link" href="https://tejiri-code.github.io/University-Navigation-Map/" target="_blank" rel="noopener noreferrer">
@@ -236,6 +274,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 </button>
           </a>
         </div>
+        </div>
+
+        <div class="carousel-slide">
         <div className="project">
           <p className="project-description">Linktree Clone</p>
           <a className="project-link" href="https://tejiri-code.github.io/LinkTree-Clone/" target="_blank" rel="noopener noreferrer">
@@ -244,6 +285,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 </button>
           </a>
         </div>
+        </div>
+
+        <div class="carousel-slide">
         <div className="project">
           <p className="project-description">Automated Timetable Generator</p>
           <a className="project-link" href="https://tejiri-code.github.io/Automated-Timetable-Generator/" target="_blank" rel="noopener noreferrer">
@@ -252,18 +296,27 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 </button>
           </a>
         </div>
+        </div>
+
+        <div class="carousel-slide">
         <div className="project">
           <p className="project-description">Quiz Me</p>
           <a className="project-link" href="https://tejiri-code.github.io/Quiz-App/" target="_blank" rel="noopener noreferrer">
             <img src={quiz} alt="Quiz" className="connect" />
-            <button className='button'> Open
+            <button className='button'> View
 </button>
           </a>
         </div>
+        </div>
+        </div>
+        <div class="carousel-controls">
+        <button class="prev-button"><img width="32" height="32" src="https://img.icons8.com/windows/32/000000/long-arrow-left.png" alt="long-arrow-left"/> </button>
+        <button class="next-button"><img width="32" height="32" src="https://img.icons8.com/windows/32/long-arrow-right.png" alt="long-arrow-right"/></button>
       </div>
+      </div>
+     </div>
      
-    </animated.div>
-    
+    </animated.div> 
   );
 }
 

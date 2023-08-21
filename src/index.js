@@ -4,6 +4,7 @@ import Portfolio from "./portfolio.js"; // Update the file name with lowercase "
 import "./styles.css";
 import "./index.css";
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Portfolio />
