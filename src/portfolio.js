@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import './styles.css';
-import { AiFillLinkedin, AiFillGithub, AiFillMail, AiFillTwitterCircle } from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub, AiFillMail, AiFillTwitterCircle, AiFillStar } from 'react-icons/ai';
 import image from './image.png';
 import connected from './connected.png';
 import navigate from './navigate.png';
@@ -13,7 +13,9 @@ import investify from './investify.png';
 import spend from './spend.png'
 import recp from './ReCP.png'
 import moda from './moda.png'
-
+import wander from './wanderlust.png'
+import room from './roomswift.png'
+import resumeforge from './resumeforge.png'
 
 
 function Portfolio() {
@@ -28,6 +30,19 @@ function Portfolio() {
     link.download = 'Resume.png';
     link.click();
   };
+
+  const darkMode = () =>{
+    const theme = document.getElementById('theme')
+    const icon = document.getElementById('icon')
+
+    if(theme){
+        theme.href = 'dark.css'
+        icon.src = 'sun.png'
+    }else{
+        theme.href = 'light.css'
+        icon.src = 'moon.png'
+    }
+  }
   const slideIn = useSpring({
     transform: 'translateX(0)',
     from: { transform: 'translateX(-100%)' },
@@ -117,6 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#portfolio" class="nav__link">Projects</a></li>
+        
                         <button onClick={handleDownload} class="btn bg-black border border-solid border-black h-8 rounded-md text-white text-center text-base ml-20">Resume</button>
                     </ul>
                 </div>
@@ -200,6 +216,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <span class="skills__name"><img width="48" height="48" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>TAILWIND</span>
                         <span class="skills__name"><img width="48" height="48" src="https://img.icons8.com/color/48/react-native.png" alt="react-native"/>REACT</span>
                         <span class="skills__name"><img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="git"/>GIT</span>
+                        <span class="skills__name"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/mysql-logo.png" alt="git"/>SQL</span>
+                       
                     </div>
                 </div>
             </section>
@@ -207,14 +225,49 @@ document.addEventListener('DOMContentLoaded', function() {
             <hr></hr>
             <h2 className="section-title" id="portfolio"><u>Projects</u></h2>
       <div className="projects">
-
       <div class="carousel-container">
       <div class="carousel-track">
+
+      <div class="carousel-slide">
+        <div className="project">
+          <p className="project-description">ResumeForge</p>
+          <a className="project-link" href="https://resumeforge.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={resumeforge} alt="Resumeforge" className="connect" />
+            <button className='button'> Open
+</button>
+          </a>
+        </div>
+        </div>
+
+      <div class="carousel-slide">
+        <div className="project">
+          <p className="project-description">RoomSwift</p>
+          <a className="project-link" href="https://roomswift.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={room} alt="RoomSwift" className="connect" />
+            <button className='button'> Open
+</button>
+          </a>
+        </div>
+        </div>
+
+        
+      
+      <div class="carousel-slide">
+        <div className="project">
+          <p className="project-description">WanderLust</p>
+          <a className="project-link" href="https://wanderlust-world.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={wander} alt="Wanderlust" className="connect" />
+            <button className='button'> Open
+</button>
+          </a>
+        </div>
+        </div>
+       
         <div class="carousel-slide">
         <div className="project">
           <p className="project-description">Moda Matrix</p>
           <a className="project-link" href="https://modamatrix.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <img src={moda} alt="ReCP" className="connect" />
+            <img src={moda} alt="modamatix" className="connect" />
             <button className='button'> Open
 </button>
           </a>
