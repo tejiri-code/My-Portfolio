@@ -22,7 +22,8 @@ import moda from "./moda.png";
 import wander from "./wanderlust.png";
 import room from "./roomswift.png";
 import resumeforge from "./resumeforge.png";
-import analytics from "./analytics_dashboard.png"
+import analytics from "./analytics_dashboard.png";
+import studenthub from "./studenthub.png";
 
 function Portfolio() {
   const fadeIn = useSpring({
@@ -130,6 +131,20 @@ function Portfolio() {
     prevButton.addEventListener("click", prevSlide);
   });
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add your logic to handle form submission (e.g., sending an email)
+    console.log("Form submitted:", { name, email, message });
+    // Reset the form fields
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <animated.div className="portfolio" style={fadeIn}>
       <header class="l-header">
@@ -141,8 +156,7 @@ function Portfolio() {
           </div>
 
           <div class={isNavOpen ? "nav__menu show" : "nav__menu"} id="nav-menu">
-            
-            <ul class="nav__list" >
+            <ul class="nav__list">
               <li class="nav__item">
                 <a href="#home" class="nav__link">
                   Home
@@ -168,7 +182,7 @@ function Portfolio() {
                 onClick={handleDownload}
                 class="btn bg-black border border-solid  border-white h-7 rounded-md text-white text-center text-base ml-5 hover:bg-white hover:text-black hover:border-black"
               >
-             <span className="p-3">  Resume</span>
+                <span className="p-3"> Resume</span>
               </button>
             </ul>
           </div>
@@ -332,14 +346,14 @@ function Portfolio() {
               />
               GITHUB
             </span>
-          <span class="skills__name">
+            <span class="skills__name">
               <img
                 width="50"
                 height="50"
                 src="https://img.icons8.com/color/48/firebase.png"
                 alt="git"
               />
-             FIREBASE
+              FIREBASE
             </span>
             <span class="skills__name">
               <img
@@ -348,9 +362,9 @@ function Portfolio() {
                 src="https://img.icons8.com/fluency/48/node-js.png"
                 alt="git"
               />
-             NODE.JS
+              NODE.JS
             </span>
-            
+
             <span class="skills__name">
               <img
                 width="50"
@@ -358,160 +372,211 @@ function Portfolio() {
                 src="https://img.icons8.com/dusk/100/000000/postman-api.png"
                 alt="git"
               />
-             POSTMAN API
+              POSTMAN API
             </span>
           </div>
         </div>
       </section>
 
       <hr></hr>
-      <h2 className="section-title" id="portfolio">
-        <u className="mb-5">Projects</u>
+      <h2
+        className=" font-bold underline text-2xl lg:mb-2 md:mb-3 mb-50"
+        id="portfolio"
+      >
+        Projects
       </h2>
       <div className="projects">
         <div class="carousel-container">
           <div class="carousel-track">
+            <div class="carousel-slide">
+              <div className="project mt-10">
+                <a
+                  className="project-link"
+                  href="https://www.studenthub360.software/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="project-description">Studenthub 360</p>
+                  <img
+                    src={studenthub}
+                    alt="Studenthub 360"
+                    className="connect"
+                  />
 
-          <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">Analytics Dashboard</p>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="http://tejiri.me/analytics-dashboard/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">Analytics Dashboard</p>
                   <img
                     src={analytics}
                     alt="Analytics Dashboard"
                     className="connect"
                   />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
 
-            
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">ResumeForge</p>
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="https://resumeforge.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">ResumeForge</p>
                   <img
                     src={resumeforge}
                     alt="Resumeforge"
                     className="connect"
                   />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
 
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">RoomSwift</p>
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="https://roomswift.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">RoomSwift</p>
                   <img src={room} alt="RoomSwift" className="connect" />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
 
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">WanderLust</p>
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="https://wanderlust-world.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">WanderLust</p>
                   <img src={wander} alt="Wanderlust" className="connect" />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
 
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">Moda Matrix</p>
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="https://modamatrix.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">Moda Matrix</p>
                   <img src={moda} alt="modamatix" className="connect" />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
 
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">ReCP</p>
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="https://recep-tejiri-code.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">ReCP</p>
                   <img src={recp} alt="ReCP" className="connect" />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
 
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">Spend W Me</p>
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="https://spend-w-me.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">Spend W Me</p>
                   <img src={spend} alt="Spend W Me" className="connect" />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
 
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">Investify</p>
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="https://investify-me.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">Investify</p>
                   <img src={investify} alt="Investify" className="connect" />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
 
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">ConnectED</p>
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="http://www.connected.net.ng/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">ConnectED</p>
                   <img src={connected} alt="ConnectED" className="connect" />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
@@ -526,60 +591,71 @@ function Portfolio() {
                   rel="noopener noreferrer"
                 >
                   <img src={navigate} alt="Navigate" className="connect" />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div> */}
 
-
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">Linktree Clone</p>
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="https://tejiri-code.github.io/LinkTree-Clone/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">Linktree Clone</p>
                   <img src={linktree} alt="Linktree" className="connect" />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
 
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">
-                  Automated Timetable Generator
-                </p>
+              <div className="project  mt-10">
                 <a
                   className="project-link"
                   href="https://tejiri-code.github.io/Automated-Timetable-Generator/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p className="project-description">
+                    Automated Timetable Generator
+                  </p>
                   <img src={agt} alt="AGT" className="connect" />
-                  <button className="button"> Open</button>
+                   <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
 
             <div class="carousel-slide">
-              <div className="project">
-                <p className="project-description">Quiz Me</p>
+              <div className="project mt-10">
                 <a
                   className="project-link"
                   href="https://tejiri-code.github.io/Quiz-App/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={quiz} alt="Quiz" className="connect" />
-                  <button className="button"> View</button>
+                  <p className="project-description">Quiz Me</p>
+                  <img src={quiz} alt="Quiz" className="connect " />
+                  <button className=" border rounded-lg bg-white shadow-md w-20 h-8 mt-2">
+                    {" "}
+                    View
+                  </button>
                 </a>
               </div>
             </div>
           </div>
-          <div class="carousel-controls">
+          <div className=" mt-2 ">
             <button class="prev-button">
               <img
                 width="32"
@@ -599,6 +675,38 @@ function Portfolio() {
           </div>
         </div>
       </div>
+      {/* <div className="contact-form-container">
+        <h2>Contact Form</h2>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+
+          <label htmlFor="message">Message:</label>
+          <textarea
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div> */}
     </animated.div>
   );
 }
